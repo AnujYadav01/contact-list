@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #e0e3e6;
+  margin: auto;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.main-heading-icon {
+  margin-top: 35px;
+}
+.add-button {
+  background-color: #196fe1;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  margin: 10px;
+}
+.input-search {
+  cursor: pointer;
+  margin: 15px;
+  font-weight: bold;
+  font-size: larger;
+}
+.contact-list {
+  width: 70%;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #205293;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  padding-top: 10px;
+}
+.contact-name {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.Amodel-container {
+  background-color: whitesmoke;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.Amodel-container button {
+  display: flex;
+  flex-direction: column;
+}
+.Amodel-container .field {
+  display: flex;
+  flex-direction: column;
+}
+.submit-cancel-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.Amodel-div {
+  background-color: whitesmoke;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+/* .main-heading {
+  text-transform: uppercase;
+
+  padding: 4px;
+}
+.container {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-heading-icon {
+  padding-right: 10px;
+  padding-top: 40px;
+}
+.add-button {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  margin-left: 35%;
+  text-transform: uppercase;
+  font-size: larger;
+  background-color: #196fe1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.input-search {
+  width: 400px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* border-style: solid;
+  border-width: 1px; 
+  font-size: larger;
+  margin-left: 478px;
+  margin-top: 8px;
+  border-radius: 10px;
+  padding: 4px;
+  cursor: pointer;
+}
+.input-search input {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+}
+.input-search button {
+  width: 30%;
+  border-radius: 10px;
+  height: 100%;
+}
+.input-search-icon {
+}
+.input-search-bar {
+}
+.contact-list {
+  background-color: #205293;
+  width: 400px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 1px;
+  font-size: larger;
+  margin-left: 478px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+/* model css */
+
+/* .modelBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .modelContainer {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.modalContainer .footer button {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+} */
