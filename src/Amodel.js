@@ -2,18 +2,26 @@ import React, { useState } from "react";
 import "./index.css";
 
 const Amodel = (props) => {
-  const { closeModel, addNewContact } = props;
-  const [name, setName] = useState("");
-  const [number, setNumber] = useState("");
+  const {
+    closeModel,
+    addNewContact,
+    editContact,
+    defaultName,
+    defaultNumber,
+    mode,
+  } = props;
+  const [name, setName] = useState(defaultName);
+  const [number, setNumber] = useState(defaultNumber);
 
   const onSubmit = (e) => {
-    addNewContact(name, number);
+    if (mode === "add") addNewContact(name, number);
+    else editContact(name, number);
     closeModel(false);
   };
   return (
     <div className="Amodel-container">
       <div className="Amodel-div">
-        <h1>Add contact</h1>
+        <h1>{mode === "add" ? "Add Contact" : "Edit Contact"}</h1>
         <div className="ui divider"></div>
         <div className="ui form"></div>
         <div className="field">
